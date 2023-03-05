@@ -1,0 +1,503 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background: #c0c0aa;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.navbar-collapse {
+  font-family: Lobster;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Lobster;
+}
+
+.seccion-oscura {
+  color: black;
+  background-color: #9efffc;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: Lobster;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  background:#ab9df3f1 ;
+  border: #ffffff;
+  color: rgb(255, 255, 255);
+}
+
+.texto-negro {
+  color: rgb(0, 0, 0);
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+  background-color: #fFFFFF;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 300px;
+  height: 260px;
+  margin: 20px;
+}
+.imagen{
+  width: 150px;
+  height: 110px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1c87843c;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: Lobster;
+}
+
+.r {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/* Articulos */
+
+.articulos {
+  min-height: 500px;
+  padding: 30px;
+  background: #c0c0aa;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+  background-color: #FFFF;
+}
+
+.articulos .card-header {
+  font-weight: bold;
+  background-color: #c5ffe8;
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #ab9df3f1;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #fdfad5;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px #f5f5f5;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: #4b1f42;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #FFFF;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: none;
+  color: black;
+}
+
+.contacto button i {
+  color: black;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: rgb(0, 0, 0);
+  margin-top: 1%;
+  text-shadow:
+  0 0 5px  rgb(110, 255, 245),
+  0 0 10px rgb(110, 255, 245),
+  0 0 20px  rgb(110, 255, 245);
+}
+
+
+
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: Lobster;
+}
+
+/*-----Redes Sociales--------*/
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #72118a;
+  box-shadow:  0 0 20px #72118a;
+
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #1da1f2;
+  box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(4) {
+  background-color: #dc1005;
+  box-shadow:  0 0 20px #dc1005 ;
+}
+
+.icon i {
+  color: rgb(255, 254, 254);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+/*------------------------------*/
+
+footer{
+  background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  font-family: Lobster
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #080000;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #000000;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #000000;
+}
+.titulo-final{
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}#ab9df3f1
+.neons {
+  color: rgb(3, 3, 3);
+  margin-top: 1%;
+  text-shadow:
+  0 0 5px  rgba(18, 218, 253),
+  0 0 10px rgba(70, 227, 255),
+  0 0 20px  rgba(0, 94, 110, 0.663);
+}
+.neon {
+  color: rgb(3, 3, 3);
+  margin-top: 1%;
+  text-shadow:
+  0 0 5px  rgba(171, 157, 243, 0.969),
+  0 0 10px rgba(171, 157, 243, 0.969),
+  0 0 20px  rgba(0, 94, 110, 0.663);
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
